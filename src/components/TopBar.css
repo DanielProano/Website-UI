@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes topbarColorCycle {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.topbar {
+  background: #274370;
+  background-size: 200% 200%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 20px;
+
+  animation: topbarColorCycle 8s infinite;
+}
+
+.topbar-link {
+  color: #f0f0f0;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background: linear-gradient(135deg, #808ee7 0%, #10fff7 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #d4effa;
+  padding: 15px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  color: #87a6ed;
+}
+
+.signin-svg {
+  width: 45px;
+  height: auto;
+  position: absolute;
+  right: 20px;
+}

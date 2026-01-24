@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './TopBar.css';
 
 import SigninSvg from '../assets/signin_person.svg';
 
@@ -12,7 +10,7 @@ function TopBar() {
 
 	return (
 		<header className="topbar">
-         <Link to="https://dannyproano.com/" className="topbar-link">Home</Link>
+         <a href="https://dannyproano.com/" className="topbar-link">Home</a>
          <div className="dropdown" onMouseEnter={() => setProjectsIsOpen(true)} onMouseLeave={() => setProjectsIsOpen(false)}>
             <button onClick={() => setProjectsIsOpen(o => !o)} className="topbar-link">
                Projects  ▾
@@ -20,12 +18,12 @@ function TopBar() {
             
             {projectsIsOpen && (
                <div className="dropdown-menu">
-                  <Link to="https://dannyproano.com/pass/login" className="dropdown-item">
+                  <a href="https://dannyproano.com/pass/login" className="dropdown-item">
                      Password Manager
-                  </Link>
-                  <Link to="https://dannyproano.com/Chess" className="dropdown-item">
+                  </a>
+                  <a href="https://dannyproano.com/Chess" className="dropdown-item">
                      Chess
-                  </Link> 
+                  </a> 
                </div>  
             )}
          </div>
@@ -37,12 +35,12 @@ function TopBar() {
 
             {researchIsOpen && (
                <div className="dropdown-menu">
-                  <Link to="https://dannyproano.com/HardwareHacking" className="dropdown-item">
+                  <a href="https://dannyproano.com/HardwareHacking" className="dropdown-item">
                      Hardware Hacking
-                  </Link> 
-                  <Link to="https://dannyproano.com/Purt" className="dropdown-item">
+                  </a> 
+                  <a href="https://dannyproano.com/Purt" className="dropdown-item">
                      Purt
-                  </Link> 
+                  </a> 
                </div>
             )}
          </div>  
@@ -85,8 +83,8 @@ function TopBar() {
             <div className="app">
                <div className="signin-dropdown">
                   <div className="signin-exit"> X </div>
-                  <img className="signin-img"/>
-                  <button className="signin-Button" onClick={() => navigation('https://dannyproano/website/login')}> 
+                  <img className="signin-img" src={SigninSvg}/>
+                  <button className="signin-Button" onClick={() => window.location.href = 'https://dannyproano/website/login'}> 
                      Login 
                   </button>
                </div>

@@ -1,6 +1,6 @@
 {
    "name": "@dproano_npm/website-topbar",
-   "version": "0.1.6",
+   "version": "0.1.7",
    "type": "module",
    "main": "dist/website-topbar.js",
    "module": "dist/website-topbar.js",

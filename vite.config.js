@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
-import { libInjectCss } from "vite-plugin-lib-inject-css";
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), cssInjectedByJsPlugin()],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.jsx"),
@@ -15,6 +15,6 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom"],
     },
-    cssCodeSplit: true,
+    cssCodeSplit: false,
   },
 });

@@ -21,7 +21,7 @@ function TopBar() {
                   <a href="https://dannyproano.com/pass/login" className="dropdown-item">
                      Password Manager
                   </a>
-                  <a href="https://dannyproano.com/Chess" className="dropdown-item">
+                  <a href="https://dannyproano.com/chess/" className="dropdown-item">
                      Chess
                   </a> 
                </div>  

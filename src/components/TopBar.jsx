@@ -18,7 +18,7 @@ function TopBar() {
             
             {projectsIsOpen && (
                <div className="dropdown-menu">
-                  <a href="https://dannyproano.com/pass/login" className="dropdown-item">
+                  <a href="https://dannyproano.com/pass/" className="dropdown-item">
                      Password Manager
                   </a>
                   <a href="https://dannyproano.com/chess/" className="dropdown-item">

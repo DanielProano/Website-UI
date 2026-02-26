@@ -72,6 +72,7 @@ function TopBar() {
             )}
          </div>
          
+         {/*}
          <img 
             className="signin-svg" 
             src={SigninSvg} 
@@ -79,6 +80,7 @@ function TopBar() {
             onMouseLeave={() => setSigninIsOpen(false)}
             onClick={() => setSigninIsOpen(o => !o)}
          />
+         */}
          {signinIsOpen && (
             <div className="app">
                <div className="signin-dropdown">
@@ -90,6 +92,7 @@ function TopBar() {
                </div>
             </div>
          )}
+         
       </header>
 	);
 }
